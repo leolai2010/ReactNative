@@ -14,3 +14,6 @@ react-native init <project name>
 npm add @babel/runtime
 react-native run-android
 // for dev menu debug press ctrl + M
+
+//to install redux
+npm install --save redux react-redux
