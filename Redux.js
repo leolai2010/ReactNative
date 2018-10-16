@@ -55,3 +55,7 @@ const store = Redux.createStore(reducer);
 store.dispatch(action);
 store.dispatch(action2);
 store.getState();
+
+//in React App
+// The flow of redux should be
+// component -> action creator -> action -> reducer

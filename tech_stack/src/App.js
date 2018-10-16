@@ -3,6 +3,8 @@ import { View } from 'react-native'; //communication glue between react/redux
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from './reducers'
+import { Header } from './components/common';
+import LibraryList from './components/LibraryList';
 
 //Provider houses the store 
 //Provider serves as a communication between action coming into store 
@@ -11,7 +13,10 @@ import reducers from './reducers'
 const App = () =>{
     return(
         <Provider store={createStore(reducers)}>
-            <View/>
+            <View style={{ flex: 1 }}>
+                <Header headerText="Tech Stack"/>
+                <LibraryList/>
+            </View>
         </Provider>
     );
 };
